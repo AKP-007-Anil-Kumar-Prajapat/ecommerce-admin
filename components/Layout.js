@@ -3,6 +3,7 @@ import Nav from "@/components/Nav"
 
 export default function Layout({ children }) {
     const { data: session } = useSession()
+
     if (!session) {
         return (
             <div className="bg-blue-900 w-screen h-screen flex items-center" >
